@@ -9,5 +9,8 @@ router
     .get(entriesController.index)
     .post(entriesController.create)
 
+router
+    .route("/:id")
+    .get(entriesController.show);
 
 module.exports = router;

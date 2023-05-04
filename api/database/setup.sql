@@ -10,5 +10,11 @@ CREATE TABLE entries (
 );   
 
 
-INSERT INTO entries (date, time, category, content)
-VALUES ('2023/05/04','00:00:00', 'Wildest Dream', 'Hello world.');
+INSERT INTO entries
+    (date, time, category, content)
+VALUES 
+('2023/05/04','00:00:00', 'Wildest Dream', 'Hello world.'),
+('2023/05/04','17:02:03', 'Wildest Dream', 'Hello world.'),
+('2023/05/03','00:00:00', 'Deepest Fears', 'Hello world.'),
+('2023/05/02','00:00:00', 'Regrettable Choices', 'Hello world.'),
+('2023/05/01','00:00:00', 'Wildest Dream', 'Hello world.');
