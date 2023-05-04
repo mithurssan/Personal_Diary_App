@@ -13,5 +13,6 @@ router
     .route("/:id")
     .get(entriesController.show)
     .patch(entriesController.update)
+    .delete(entriesController.destroy)
 
 module.exports = router;

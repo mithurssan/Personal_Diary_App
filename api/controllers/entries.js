@@ -40,6 +40,17 @@ const update = async (req, res) => {
     }
 }
 
+const destroy = async (req, res) => {
+    try {
+        const id = parseInt(req.params.id);
+        const entry = await Entry.findById(id);
+        const result = await entry.destroy();
+        res.status(204).send(result);
+    } catch (err) {
+        res.status(404).send({ "error": err.message });
+    }
+}
+
 module.exports = {
-    index, show, create, update
+    index, show, create, update, destroy
 };
