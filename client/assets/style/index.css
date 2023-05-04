@@ -1,0 +1,26 @@
+.btn {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(#f5fbef);
+    --bs-btn-bg: var(#d9bbf9);
+    --bs-btn-border-color: var(#d9bbf9);
+    --bs-btn-hover-color: var(#f5fbef);
+    --bs-btn-hover-bg: var(#d9bbf9);
+    --bs-btn-hover-border-color: var(#d9bbf9);
+    --bs-btn-focus-shadow-rgb: var(#d9bbf9);
+    --bs-btn-active-color: var(#d9bbf9);
+    --bs-btn-active-bg: var(#d9bbf9);
+    --bs-btn-active-border-color: var(#d9bbf9);
+  }
+
+h1 {
+    color: #F5FBEF;
+    text-align: center;
+  }
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #D9BBF9;
+}
