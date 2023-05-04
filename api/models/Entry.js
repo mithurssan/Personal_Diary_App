@@ -15,6 +15,14 @@ class Entry {
         return entries;
     }
 
+    static async findById(id) {
+        const response = await db.query("SELECT * FROM entries WHERE id = $1", [id]);
+        if (response.rows.length != 1) {
+            throw new Error("Entry not found.")
+        }
+        return new Entry(response.rows[0]);
+    }
+
     static async create(data) {
         const { date, time, category, content } = data;
         const response = await db.query('INSERT INTO entries (date, time, category, content) VALUES ($1, $2, $3, $4) RETURNING *;', [date, time, category, content]);
