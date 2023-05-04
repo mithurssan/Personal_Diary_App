@@ -6,7 +6,8 @@ const router = Router();
 
 router
     .route("/")
-    .get(entriesController.index);
+    .get(entriesController.index)
+    .post(entriesController.create)
 
 
 module.exports = router;
