@@ -11,6 +11,7 @@ router
 
 router
     .route("/:id")
-    .get(entriesController.show);
+    .get(entriesController.show)
+    .patch(entriesController.update)
 
 module.exports = router;
