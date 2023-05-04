@@ -13,7 +13,7 @@ api.use(express.json());
 api.use(logger("dev"));
 
 api.get("/", (req, res) => {
-    res.send("Welcome to the diary entires.");
+    res.send("Welcome to the diary entries.");
 })
 
 api.use("/entries", entryRoutes);
