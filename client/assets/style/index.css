@@ -1,15 +1,11 @@
 .btn {
     --bs-btn-font-weight: 600;
-    --bs-btn-color: var(#f5fbef);
-    --bs-btn-bg: var(#d9bbf9);
-    --bs-btn-border-color: var(#d9bbf9);
-    --bs-btn-hover-color: var(#f5fbef);
-    --bs-btn-hover-bg: var(#d9bbf9);
-    --bs-btn-hover-border-color: var(#d9bbf9);
-    --bs-btn-focus-shadow-rgb: var(#d9bbf9);
-    --bs-btn-active-color: var(#d9bbf9);
-    --bs-btn-active-bg: var(#d9bbf9);
-    --bs-btn-active-border-color: var(#d9bbf9);
+    --bs-btn-hover-color: var(#F7B801);
+    --bs-btn-hover-bg: var(#F7B801);
+    --bs-btn-hover-border-color: var(#F7B801);
+    --bs-btn-active-color: var(#F7B801);
+    --bs-btn-active-bg: var(#F7B801);
+    --bs-btn-active-border-color: var(#F7B801);
   }
 
 h1 {
